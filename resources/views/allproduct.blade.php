@@ -79,7 +79,7 @@
 
 
                 <div class="info">
-                    <a href="{{ route('product.all') }}" class="hover:underline">
+                    <a href="#" class="hover:underline">
                         Marketplace
                     </a>
                 </div>
@@ -155,112 +155,11 @@
         </div>
     </header>
 
-    <div>
-        <div class="absolute inset-x-0 -top-40 -z-10  overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-            </div>
-        </div>
-        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div
-                    class="rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-100/10 hover:ring-gray-900/20">
-                    Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600">Read
-                        more <span aria-hidden="true">&rarr;</span></a>
-                </div>
-            </div>
-            <div class="text-center">
-                <h1 class="text-4xl font-gloock font-bold tracking-tight text-gray-300 sm:text-6xl">
-                    Marketplace Where You Find
-                    Your Website</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt.
-                    Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#"
-                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-                        started</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-                            aria-hidden="true">→</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-            aria-hidden="true">
-            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-            </div>
-        </div>
-    </div>
-    {{-- </div> --}}
-
-    {{-- Fitur --}}
-
-    <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:text-center">
-                <h2 class="text-base font-semibold leading-7 text-indigo-600">Use Easier</h2>
-                <p class="mt-2 text-3xl font-gloock font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you
-                    need to find
-                    Website</p>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget
-                    aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra
-                    elit nunc.</p>
-            </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
-                    <div class="text-center">
-                        <div class="flex mx-auto mb-2 h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-                            </svg>
-                        </div>
-                        <dt class="text-base font-semibold leading-7 text-gray-900">
-                            Easy To Use
-                        </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper
-                            ultricies libero dolor eget. </dd>
-                    </div>
-                    <div class="text-center">
-                        <div class="flex mx-auto mb-2 h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                            </svg>
-                        </div>
-                        <dt class="text-base font-semibold leading-7 text-gray-900">
-                            Get Help for Installation
-                        </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus. Risus
-                            proin diam nunc commodo. </dd>
-                    </div>
-                    <div class="text-center">
-                        <div class="flex mx-auto mb-2 h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-                            </svg>
-                        </div>
-                        <dt class="text-base font-semibold leading-7 text-gray-900">
-                            Advanced New Technology
-                        </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum
-                            mauris. </dd>
-                    </div>
-                </dl>
-            </div>
-        </div>
-    </div>
-
     {{-- Showcase Produk --}}
     <div class="bg-slate py-16">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
             <div class="mx-auto text-center lg:mx-0">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl font-gloock">Newest Product</h2>
-                <p class="mt-2 text-lg leading-8 text-gray-600 ">Find Fit Website For Your Company
+                <h2 class="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl font-gloock">All Product</h2>
                 </p>
             </div>
             <hr class="border-t border-gray-200 my-10">
@@ -279,7 +178,7 @@
                             <div>
                                 <div class="flex flex-col">
                                     {{-- <h1 class="text-gray-300 pb-2 text-2xl"> --}}
-                                    <a href="#" class="font-gloock hover:underline text-gray-300 pb-2 text-2xl capitalize">
+                                    <a href="{{ route('product.detail', ['id' => $product->id]) }}" class="font-gloock hover:underline text-gray-300 pb-2 text-2xl capitalize">
                                         {{ Str::limit($product->name, 60) }}
                                     </a>
                                     {{-- </h1> --}}
@@ -326,7 +225,7 @@
 
             </div>
             <div class="text-center">
-                <a href="#" class=" hover:underline text-white">More Website.</a>
+                <a href="{{ route('product.all') }}" class=" hover:underline text-white">More Website.</a>
             </div>
         </div>
 

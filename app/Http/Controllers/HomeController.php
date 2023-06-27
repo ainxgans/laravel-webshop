@@ -14,4 +14,14 @@ class HomeController extends Controller
         // dd($products->thumbnail);
         return view('home', ['title' => "TEMPLATIN", 'products' => $products]);
     }
+    public function detail($id)
+    {
+        $product = Product::find($id);
+        return view('detail', ['title' => "TEMPLATIN", 'product' => $product]);
+    }
+    public function allproduct()
+    {
+        $products = Product::all()->sortByDesc('created_at');
+        return view('allproduct', ['title' => "TEMPLATIN", 'products' => $products]);
+    }
 }

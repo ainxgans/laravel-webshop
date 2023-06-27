@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::prefix('product')->group(function () {
+    Route::get('/', [HomeController::class, 'allproduct'])->name('product.all');
+    Route::get('/{id}', [HomeController::class, 'detail'])->name('product.detail');
+});
