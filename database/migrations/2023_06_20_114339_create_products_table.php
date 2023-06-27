@@ -17,6 +17,7 @@ return new class extends Migration
             $table->longText('description');
             $table->integer('price');
             $table->string('thumbnail');
+            $table->string('demo');
             $table->timestamps();
         });
     }
