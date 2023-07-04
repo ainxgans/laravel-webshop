@@ -30,10 +30,15 @@ class ProductResource extends Resource
                         Forms\Components\TextInput::make('name')
                             ->required()
                             ->maxLength(255),
+                        Forms\Components\Select::make('kategoris_id')
+                            ->relationship('kategoris', 'nama')
+                            ->required(),
                         Forms\Components\RichEditor::make('description')
                             ->required(),
                         Forms\Components\TextInput::make('price')
                             ->numeric()
+                            ->required(),
+                        Forms\Components\TextInput::make('demo')
                             ->required(),
                         Forms\Components\FileUpload::make('thumbnail')
                             ->required()
@@ -46,6 +51,9 @@ class ProductResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('kategori.nama')
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('price')
