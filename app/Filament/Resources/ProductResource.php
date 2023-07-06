@@ -35,8 +35,10 @@ class ProductResource extends Resource
                         Forms\Components\TextInput::make('price')
                             ->numeric()
                             ->required(),
-                        Forms\Components\FileUpload::make('thumbnail')
-                            ->required()
+                            Forms\Components\TextInput::make('demo')
+                            ->required(),
+                            Forms\Components\FileUpload::make('thumbnail')
+                                ->required()
                     ])
             ]);
     }
@@ -51,6 +53,7 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('price')
                     ->sortable(),
                 Tables\Columns\ImageColumn::make('thumbnail'),
+                Tables\Columns\ImageColumn::make('demo'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->sortable()
                     ->dateTime(),

@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    {{-- icon --}}
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         .font-gloock {
@@ -52,108 +55,37 @@
         </div>
     </div> --}}
     {{-- <div class="bg-slate"> --}}
-    <header class="mx-auto sticky top-0 z-20" x-data="{ 'showModal': false }">
-        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">TEMPLATIN</span>
-                </a>
-            </div>
-            <div class="flex lg:hidden">
-                <button type="button"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                    @click="showModal = true">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-            </div>
-            <div
-                class="hidden w-screen lg:flex justify-between inset-x-0 backdrop-blur-md bg-slate-800/40 rounded-md p-5 text-cyan-50">
-                <h1>
-                    {{ $title }}
-                </h1>
+    <header class="w-full h-[80px] flex mx-auto max-w-7xl px-6 lg:px-8 justify-between items-center">
+        <div class="flex gap-x-2 items-center w-[80%]">
+            <h1 class="text-xl font-bold ">Templatin</h1>
 
-
-                <div class="info">
-                    <a href="{{ route('product.all') }}" class="hover:underline">
-                        Marketplace
-                    </a>
-                </div>
-
-                {{-- <div class="auth">
-
-                    @if (Route::has('login'))
-                        <div class="sm:block">
-                            @auth
-                                <a href="{{ url('/dashboard') }}"
-                                    class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                            @else
-                                <a href="{{ route('login') }}"
-                                    class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                                @if (Route::has('register'))
-                                    <a href="{{ route('register') }}"
-                                        class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                                @endif
-                            @endauth
-                        </div>
-                    @endif
-                </div> --}}
-                {{-- </div> --}}
-            </div>
-        </nav>
-
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true" x-show="showModal">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50"></div>
-            <div
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-slate-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-between">
-                    <a href="#" class="-m-1.5 p-1.5">
-                        <span class="sr-only">TEMPLATIN</span>
-                    </a>
-                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="showModal = false">
-                        <span class="sr-only">Close menu</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="mt-6 flow-root ">
-                    <div class="-my-6 divide-y  divide-gray-500/10">
-                        <div class="py-6">
-                            @if (Route::has('login'))
-                                {{-- <div class="sm:block"> --}}
-                                @auth
-                                    <a href="{{ url('/dashboard') }}"
-                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Dashboard</a>
-                                @else
-                                    <a href="{{ route('login') }}"
-                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
-                                        in</a>
-
-                                    @if (Route::has('register'))
-                                        <a href="{{ route('register') }}"
-                                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Register</a>
-                                    @endif
-                                @endauth
-                                {{-- </div> --}}
-                            @endif
-                            {{-- </div> --}}
-                            {{-- </div> --}}
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <ul class="hidden md:flex gap-x-2 items-center">
+            <li><a href="/product" class="hover:bg-gray-400 rounded p-3 nav-link">Product</a></li>
+            <li><a href="/login" class="hover:bg-gray-400 rounded p-3 nav-link">Login</a></li>
+            <li><a href="/register" class="hover:bg-gray-400 rounded p-3 nav-link">Register</a></li>
+        </ul>
+        <div onclick="toggleActive()" id="hamburger" class="md:hidden">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
         </div>
     </header>
+    <div class="absolute w-full h-[20vh] -top-[100%] bg-gray-200 flex flex-col  px-6 lg:px-8 transition-all duration-300 ease-in-out"
+        id="nav__nonactive" style="top: -100%;">
+
+        <div class="w-full text-end mt-5" onclick="toggleActive()">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </div>
+        <ul class="flex flex-col gap-y-2 items-center justify-center w-full flex-1">
+            <li class="w-full hover:bg-gray-400  rounded py-1 text-center"><a href="/product" class="">Product</a>
+            </li>
+            <li class="w-full hover:bg-gray-400 rounded py-1 text-center"><a href="#">Login</a></li>
+            <li class="w-full hover:bg-gray-400 rounded py-1 text-center"><a href="#">Register</a></li>
+        </ul>
+    </div>
 
     <div>
         <div class="absolute inset-x-0 -top-40 -z-10  overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -266,64 +198,61 @@
             <hr class="border-t border-gray-200 my-10">
             <div class="text-white">
             </div>
-            <div class="flex justify-center flex-wrap gap-5 mb-10">
-                @forelse ($products as $product)
-                    <div class="relative w-96 pb-20 bg-gray-800 border-5 rounded-md">
-                        <div
-                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 object-fill">
+            <div class="min-h-screen">
+
+                <div class="grid grid-cols-3 h-[400px] gap-[40px]">
+                    @forelse ($products as $product)
+                        <div class="col-span-1  flex flex-col  border-2  rounded-lg">
+
                             <img src="{{ asset('storage/' . $product->thumbnail) }}"
                                 alt="Front of men&#039;s Basic Tee in black."
-                                class="h-full w-full transition-transform hover:scale-110 object-cover object-center lg:h-full lg:w-full">
-                        </div>
-                        <div class="mt-4 p-5 pt-2 rounded-md flex justify-between">
-                            <div>
-                                <div class="flex flex-col">
-                                    {{-- <h1 class="text-gray-300 pb-2 text-2xl"> --}}
-                                    <a href="#" class="font-gloock hover:underline text-gray-300 pb-2 text-2xl capitalize">
-                                        {{ Str::limit($product->name, 60) }}
-                                    </a>
-                                    {{-- </h1> --}}
-                                    <p class="text-sm font-medium text-gray-400">Rp{{  number_format($product->price, 0, ',', '.')}}</p>
-                                </div>
-                                <hr class="border-t border-gray-200 my-5">
-                                <div class="mt-1 text-sm text-gray-100">  
-                                    {!! Str::limit($product->description , 250)!!}</div>
+                                class=" w-full transition-transform hover:scale-110 object-cover object-center h-[250px] lg:w-full rounded-t" />
+                            <div class="px-4 py-4 border-t">
+
+                                <a href="{{ route('product.detail', ['id' => $product->id]) }}"
+                                    class="font-gloock hover:underline text-black pb-2 text-lg capitalize">
+                                    {{ Str::limit($product->name, 20) }}
+                                </a>
+                                <p class="text-sm font-medium text-gray-400">
+                                    Rp{{ number_format($product->price, 0, ',', '.') }}</p>
+                                <div class="mt-1 text-sm text-black">
+                                    {!! Str::limit($product->description, 20) !!}</div>
                             </div>
                         </div>
-                    </div>
 
-                @empty
-                    <div class="text-center w-full font-black my-7 text-gray-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="mx-auto" width="300"
-                            height="300" viewBox="0 0 647.63626 632.17383"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path
-                                d="M687.3279,276.08691H512.81813a15.01828,15.01828,0,0,0-15,15v387.85l-2,.61005-42.81006,13.11a8.00676,8.00676,0,0,1-9.98974-5.31L315.678,271.39691a8.00313,8.00313,0,0,1,5.31006-9.99l65.97022-20.2,191.25-58.54,65.96972-20.2a7.98927,7.98927,0,0,1,9.99024,5.3l32.5498,106.32Z"
-                                transform="translate(-276.18187 -133.91309)" fill="#3D3B81" />
-                            <path
-                                d="M725.408,274.08691l-39.23-128.14a16.99368,16.99368,0,0,0-21.23-11.28l-92.75,28.39L380.95827,221.60693l-92.75,28.4a17.0152,17.0152,0,0,0-11.28028,21.23l134.08008,437.93a17.02661,17.02661,0,0,0,16.26026,12.03,16.78926,16.78926,0,0,0,4.96972-.75l63.58008-19.46,2-.62v-2.09l-2,.61-64.16992,19.65a15.01489,15.01489,0,0,1-18.73-9.95l-134.06983-437.94a14.97935,14.97935,0,0,1,9.94971-18.73l92.75-28.4,191.24024-58.54,92.75-28.4a15.15551,15.15551,0,0,1,4.40966-.66,15.01461,15.01461,0,0,1,14.32032,10.61l39.0498,127.56.62012,2h2.08008Z"
-                                transform="translate(-276.18187 -133.91309)" fill="#3D3B81" />
-                            <path
-                                d="M398.86279,261.73389a9.0157,9.0157,0,0,1-8.61133-6.3667l-12.88037-42.07178a8.99884,8.99884,0,0,1,5.9712-11.24023l175.939-53.86377a9.00867,9.00867,0,0,1,11.24072,5.9707l12.88037,42.07227a9.01029,9.01029,0,0,1-5.9707,11.24072L401.49219,261.33887A8.976,8.976,0,0,1,398.86279,261.73389Z"
-                                transform="translate(-276.18187 -133.91309)" fill="#6c63ff" />
-                            <circle cx="190.15351" cy="24.95465" r="20" fill="#6c63ff" />
-                            <circle cx="190.15351" cy="24.95465" r="12.66462" fill="#3D3B81" />
-                            <path
-                                d="M878.81836,716.08691h-338a8.50981,8.50981,0,0,1-8.5-8.5v-405a8.50951,8.50951,0,0,1,8.5-8.5h338a8.50982,8.50982,0,0,1,8.5,8.5v405A8.51013,8.51013,0,0,1,878.81836,716.08691Z"
-                                transform="translate(-276.18187 -133.91309)" fill="#3D3B81" />
-                            <path
-                                d="M723.31813,274.08691h-210.5a17.02411,17.02411,0,0,0-17,17v407.8l2-.61v-407.19a15.01828,15.01828,0,0,1,15-15H723.93825Zm183.5,0h-394a17.02411,17.02411,0,0,0-17,17v458a17.0241,17.0241,0,0,0,17,17h394a17.0241,17.0241,0,0,0,17-17v-458A17.02411,17.02411,0,0,0,906.81813,274.08691Zm15,475a15.01828,15.01828,0,0,1-15,15h-394a15.01828,15.01828,0,0,1-15-15v-458a15.01828,15.01828,0,0,1,15-15h394a15.01828,15.01828,0,0,1,15,15Z"
-                                transform="translate(-276.18187 -133.91309)" fill="#3f3d56" />
-                            <path
-                                d="M801.81836,318.08691h-184a9.01015,9.01015,0,0,1-9-9v-44a9.01016,9.01016,0,0,1,9-9h184a9.01016,9.01016,0,0,1,9,9v44A9.01015,9.01015,0,0,1,801.81836,318.08691Z"
-                                transform="translate(-276.18187 -133.91309)" fill="#6c63ff" />
-                            <circle cx="433.63626" cy="105.17383" r="20" fill="#6c63ff" />
-                            <circle cx="433.63626" cy="105.17383" r="12.18187" fill="#3D3B81" />
-                        </svg>
-                        <h1 class="my-5">THERE ARE NO PRODUCTS LEFT!!</h1>
-                    </div>
-                @endforelse
+                    @empty
+                        <div class="text-center w-full font-black my-7 text-gray-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="mx-auto"
+                                width="300" height="300" viewBox="0 0 647.63626 632.17383"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path
+                                    d="M687.3279,276.08691H512.81813a15.01828,15.01828,0,0,0-15,15v387.85l-2,.61005-42.81006,13.11a8.00676,8.00676,0,0,1-9.98974-5.31L315.678,271.39691a8.00313,8.00313,0,0,1,5.31006-9.99l65.97022-20.2,191.25-58.54,65.96972-20.2a7.98927,7.98927,0,0,1,9.99024,5.3l32.5498,106.32Z"
+                                    transform="translate(-276.18187 -133.91309)" fill="#3D3B81" />
+                                <path
+                                    d="M725.408,274.08691l-39.23-128.14a16.99368,16.99368,0,0,0-21.23-11.28l-92.75,28.39L380.95827,221.60693l-92.75,28.4a17.0152,17.0152,0,0,0-11.28028,21.23l134.08008,437.93a17.02661,17.02661,0,0,0,16.26026,12.03,16.78926,16.78926,0,0,0,4.96972-.75l63.58008-19.46,2-.62v-2.09l-2,.61-64.16992,19.65a15.01489,15.01489,0,0,1-18.73-9.95l-134.06983-437.94a14.97935,14.97935,0,0,1,9.94971-18.73l92.75-28.4,191.24024-58.54,92.75-28.4a15.15551,15.15551,0,0,1,4.40966-.66,15.01461,15.01461,0,0,1,14.32032,10.61l39.0498,127.56.62012,2h2.08008Z"
+                                    transform="translate(-276.18187 -133.91309)" fill="#3D3B81" />
+                                <path
+                                    d="M398.86279,261.73389a9.0157,9.0157,0,0,1-8.61133-6.3667l-12.88037-42.07178a8.99884,8.99884,0,0,1,5.9712-11.24023l175.939-53.86377a9.00867,9.00867,0,0,1,11.24072,5.9707l12.88037,42.07227a9.01029,9.01029,0,0,1-5.9707,11.24072L401.49219,261.33887A8.976,8.976,0,0,1,398.86279,261.73389Z"
+                                    transform="translate(-276.18187 -133.91309)" fill="#6c63ff" />
+                                <circle cx="190.15351" cy="24.95465" r="20" fill="#6c63ff" />
+                                <circle cx="190.15351" cy="24.95465" r="12.66462" fill="#3D3B81" />
+                                <path
+                                    d="M878.81836,716.08691h-338a8.50981,8.50981,0,0,1-8.5-8.5v-405a8.50951,8.50951,0,0,1,8.5-8.5h338a8.50982,8.50982,0,0,1,8.5,8.5v405A8.51013,8.51013,0,0,1,878.81836,716.08691Z"
+                                    transform="translate(-276.18187 -133.91309)" fill="#3D3B81" />
+                                <path
+                                    d="M723.31813,274.08691h-210.5a17.02411,17.02411,0,0,0-17,17v407.8l2-.61v-407.19a15.01828,15.01828,0,0,1,15-15H723.93825Zm183.5,0h-394a17.02411,17.02411,0,0,0-17,17v458a17.0241,17.0241,0,0,0,17,17h394a17.0241,17.0241,0,0,0,17-17v-458A17.02411,17.02411,0,0,0,906.81813,274.08691Zm15,475a15.01828,15.01828,0,0,1-15,15h-394a15.01828,15.01828,0,0,1-15-15v-458a15.01828,15.01828,0,0,1,15-15h394a15.01828,15.01828,0,0,1,15,15Z"
+                                    transform="translate(-276.18187 -133.91309)" fill="#3f3d56" />
+                                <path
+                                    d="M801.81836,318.08691h-184a9.01015,9.01015,0,0,1-9-9v-44a9.01016,9.01016,0,0,1,9-9h184a9.01016,9.01016,0,0,1,9,9v44A9.01015,9.01015,0,0,1,801.81836,318.08691Z"
+                                    transform="translate(-276.18187 -133.91309)" fill="#6c63ff" />
+                                <circle cx="433.63626" cy="105.17383" r="20" fill="#6c63ff" />
+                                <circle cx="433.63626" cy="105.17383" r="12.18187" fill="#3D3B81" />
+                            </svg>
+                            <h1 class="my-5">THERE ARE NO PRODUCTS LEFT!!</h1>
+                        </div>
+                    @endforelse
 
+                </div>
             </div>
             <div class="text-center">
                 <a href="#" class=" hover:underline text-white">More Website.</a>
@@ -361,8 +290,18 @@
             </div>
         </div>
     </div>
-    
 
+    <script>
+        function toggleActive() {
+            var navNonActive = document.getElementById("nav__nonactive");
+
+            if (navNonActive.style.top === "-100%") {
+                navNonActive.style.top = "0";
+            } else {
+                navNonActive.style.top = "-100%";
+            }
+        }
+    </script>
 </body>
 
 </html>
