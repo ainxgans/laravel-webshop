@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav__active {
+    @apply border-b border-black py-2;
+}
+.navLink {
+    background: #000;
+}
+
+.active {
+    background-color: #000;
+}

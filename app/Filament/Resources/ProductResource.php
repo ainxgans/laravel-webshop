@@ -59,6 +59,7 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('price')
                     ->sortable(),
                 Tables\Columns\ImageColumn::make('thumbnail'),
+                Tables\Columns\ImageColumn::make('demo'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->sortable()
                     ->dateTime(),

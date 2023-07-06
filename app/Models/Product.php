@@ -16,8 +16,10 @@ class Product extends Model
         'thumbnail',
         'demo'
     ];
+
     public function kategoris()
     {
         return $this->belongsTo(Kategori::class);
     }
 }
+

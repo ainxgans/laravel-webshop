@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TestimoniController;
 use Doctrine\DBAL\Schema\Index;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::prefix('product')->group(function () {
     Route::get('/', [HomeController::class, 'allproduct'])->name('product.all');
     Route::get('/{id}', [HomeController::class, 'detail'])->name('product.detail');
 });
+Route::get('/testimoni',[TestimoniController::class, 'index']);
