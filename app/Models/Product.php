@@ -10,9 +10,16 @@ class Product extends Model
     use HasFactory;
     protected $fillable = [
         'name',
+        'kategoris_id',
         'description',
         'price',
         'thumbnail',
         'demo'
     ];
+
+    public function kategoris()
+    {
+        return $this->belongsTo(Kategori::class);
+    }
 }
+

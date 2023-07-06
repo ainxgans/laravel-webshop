@@ -15,6 +15,7 @@ class User extends Seeder
      */
     public function run(): void
     {
+
         ModelsUser::create([
             "name"=>"admin",
             "email"=>"admin@gmail.com",
@@ -22,3 +23,4 @@ class User extends Seeder
         ]);
     }
 }
+
