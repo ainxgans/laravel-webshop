@@ -204,7 +204,11 @@
                     @forelse ($products as $product)
                         <div class="col-span-1  flex flex-col  border-2  rounded-lg">
 
+<<<<<<< HEAD
                             <img src="{{ Storage::url($product->thumbnail) }}"
+=======
+                            <img src="{{ asset('storage/' . $product->thumbnail) }}"
+>>>>>>> origin/master
                                 alt="Front of men&#039;s Basic Tee in black."
                                 class=" w-full transition-transform hover:scale-110 object-cover object-center h-[250px] lg:w-full rounded-t" />
                             <div class="px-4 py-4 border-t">

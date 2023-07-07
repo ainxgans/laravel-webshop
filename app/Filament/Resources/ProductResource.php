@@ -59,7 +59,11 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('price')
                     ->sortable(),
                 Tables\Columns\ImageColumn::make('thumbnail'),
+<<<<<<< HEAD
                 Tables\Columns\TextColumn::make('demo'),
+=======
+                Tables\Columns\ImageColumn::make('demo'),
+>>>>>>> origin/master
                 Tables\Columns\TextColumn::make('created_at')
                     ->sortable()
                     ->dateTime(),
@@ -93,4 +97,8 @@ class ProductResource extends Resource
             'edit' => Pages\EditProduct::route('/{record}/edit'),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
