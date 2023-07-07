@@ -163,7 +163,7 @@
             class="min-w-screen mx-6 p-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-white">
             <div class="flex flex-row">
                 <div class="flex-1">
-                    <img src="{{ asset('storage/' . $product->thumbnail) }}" alt=""
+                    <img src="{{ Storage::url($product->thumbnail) }}" alt=""
                         class="rounded-lg w-full h-[500px]">
                 </div>
                 <div class="flex flex-col mx-6 flex-1">
