@@ -62,8 +62,6 @@
         </div>
         <ul class="hidden md:flex gap-x-2 items-center">
             <li><a href="/product" class="hover:bg-gray-400 rounded p-3 nav-link">Product</a></li>
-            <li><a href="/login" class="hover:bg-gray-400 rounded p-3 nav-link">Login</a></li>
-            <li><a href="/register" class="hover:bg-gray-400 rounded p-3 nav-link">Register</a></li>
         </ul>
         <div onclick="toggleActive()" id="hamburger" class="md:hidden">
             <span class="material-symbols-outlined">
@@ -82,8 +80,6 @@
         <ul class="flex flex-col gap-y-2 items-center justify-center w-full flex-1">
             <li class="w-full hover:bg-gray-400  rounded py-1 text-center"><a href="/product" class="">Product</a>
             </li>
-            <li class="w-full hover:bg-gray-400 rounded py-1 text-center"><a href="#">Login</a></li>
-            <li class="w-full hover:bg-gray-400 rounded py-1 text-center"><a href="#">Register</a></li>
         </ul>
     </div>
 
@@ -108,7 +104,7 @@
                 <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt.
                     Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#"
+                    <a href="/product"
                         class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
                         started</a>
                     <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
@@ -203,12 +199,7 @@
                 <div class="grid grid-cols-3 h-[400px] gap-[40px]">
                     @forelse ($products as $product)
                         <div class="col-span-1  flex flex-col  border-2  rounded-lg">
-
-<<<<<<< HEAD
                             <img src="{{ Storage::url($product->thumbnail) }}"
-=======
-                            <img src="{{ asset('storage/' . $product->thumbnail) }}"
->>>>>>> origin/master
                                 alt="Front of men&#039;s Basic Tee in black."
                                 class=" w-full transition-transform hover:scale-110 object-cover object-center h-[250px] lg:w-full rounded-t" />
                             <div class="px-4 py-4 border-t">
