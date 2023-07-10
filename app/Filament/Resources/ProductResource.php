@@ -60,11 +60,6 @@ class ProductResource extends Resource
                     ->sortable(),
                 Tables\Columns\ImageColumn::make('thumbnail'),
                 Tables\Columns\TextColumn::make('demo'),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->sortable()
-                    ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
             ])
             ->filters([
                 //
