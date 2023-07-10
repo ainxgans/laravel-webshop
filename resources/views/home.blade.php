@@ -91,24 +91,13 @@
         </div>
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div
-                    class="rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-100/10 hover:ring-gray-900/20">
-                    Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600">Read
-                        more <span aria-hidden="true">&rarr;</span></a>
-                </div>
             </div>
             <div class="text-center">
                 <h1 class="text-4xl font-gloock font-bold tracking-tight text-gray-300 sm:text-6xl">
                     Marketplace Where You Find
                     Your Website</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt.
-                    Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Find a website template that suits your business or contact us if you want something interesting.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="/product"
-                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-                        started</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-                            aria-hidden="true">→</span></a>
                 </div>
             </div>
         </div>
@@ -130,9 +119,7 @@
                 <p class="mt-2 text-3xl font-gloock font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you
                     need to find
                     Website</p>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget
-                    aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra
-                    elit nunc.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">We provide web templates that are suitable for your business and easy to use</p>
             </div>
             <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                 <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
@@ -147,8 +134,7 @@
                         <dt class="text-base font-semibold leading-7 text-gray-900">
                             Easy To Use
                         </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper
-                            ultricies libero dolor eget. </dd>
+                        <dd class="mt-2 text-base leading-7 text-gray-600">Everything is easy to use, we use technologies that are easy to understand even by non-IT people</dd>
                     </div>
                     <div class="text-center">
                         <div class="flex mx-auto mb-2 h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
@@ -161,8 +147,7 @@
                         <dt class="text-base font-semibold leading-7 text-gray-900">
                             Get Help for Installation
                         </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus. Risus
-                            proin diam nunc commodo. </dd>
+                        <dd class="mt-2 text-base leading-7 text-gray-600">difficulty in using the templates we provide? just contact us, we are ready to help</dd>
                     </div>
                     <div class="text-center">
                         <div class="flex mx-auto mb-2 h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
@@ -175,8 +160,7 @@
                         <dt class="text-base font-semibold leading-7 text-gray-900">
                             Advanced New Technology
                         </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum
-                            mauris. </dd>
+                        <dd class="mt-2 text-base leading-7 text-gray-600">We use the latest technology, don't be afraid your website will be obsolete</dd>
                     </div>
                 </dl>
             </div>
